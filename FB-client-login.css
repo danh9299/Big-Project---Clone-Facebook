@@ -5,7 +5,7 @@ body {
 /*Css for the entire login box*/
 .login-box {
   background-color: #edf0f5;
-  padding: 5% 15% 20%;
+  padding: 10% 15% 20%;
   display: flex;
   align-items: center;
 }
@@ -22,7 +22,7 @@ body {
 
 /*css for the input box*/
 .input-box {
-  width: 90%;
+  width: 80%;
   background-color: white;
   border: none;
   border-radius: 5%;
