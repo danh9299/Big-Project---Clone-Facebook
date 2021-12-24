@@ -1,0 +1,15 @@
+/*css for body*/
+body {
+    background-color: #edf0f5;
+    width: 100%;
+  }
+
+.header{
+    padding: 0px 0px;
+    background-color: white;
+}
+
+.header img{
+    width: 4%;
+    height:4%;
+}
