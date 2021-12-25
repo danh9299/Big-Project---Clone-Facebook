@@ -1,0 +1,140 @@
+/*css for body*/
+body {
+    background-color: white;
+    width: 100%;
+  }
+  /*Css for the entire login box*/
+  .login-box {
+    background-color: #edf0f5;
+    padding: 10% 15% 20%;
+    display: flex;
+    align-items: center;
+  }
+  /*Css for the title FACEBOOK*/
+  .title h1 {
+    font-weight: 700;
+    color: blue;
+  }
+  /*CSS for the caption below the FACEBOOK title*/
+  .title h5 {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /*css for the input box*/
+  .input-box {
+    
+    background-color: white;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 3px 3px 4px 4px rgb(184, 184, 184);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /*css for the placeholder*/
+  .input-box input {
+    
+    font-size: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 3%/30%;
+  }
+  
+  ::placeholder {
+    font-size: 20px;;
+  }
+  
+  /*css for the LOG IN button*/
+  .input-box .btn-log-in {
+    width: 100%;
+    border-radius: 3%;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  /*css for the CREATE NEW ACCOUNT button*/
+  .create-new-acc-area {
+    display: flex;
+  
+    justify-content: center;
+  }
+  
+  .input-box .btn-new-acc {
+    background-color: #35de35;
+    
+   
+    border-radius: 3%;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  /*css for "forgotten password"*/
+  .input-box a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /*css for Create a Page*/
+  
+  .create-a-page {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+  }
+  
+  .create-a-page a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /*css for language*/
+  
+  .language {
+    list-style-type: none;
+  }
+  
+  .language li {
+    float: left;
+    color: rgb(61, 61, 61);
+    padding-right: 40px;
+    text-indent:-10px;
+  }
+  .language li a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+  }
+  
+  .language button {
+    
+    
+    font-size: large;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  /*css for option*/
+  .option {
+    list-style-type: none;
+  }
+  
+  .option li {
+    float: left;
+    color: rgb(61, 61, 61);
+    padding-right: 40px;
+    text-indent:-10px;
+  }
+  
+  .option li a {
+    text-decoration: none;
+    color: rgb(61, 61, 61);
+  }
+ 
+  
