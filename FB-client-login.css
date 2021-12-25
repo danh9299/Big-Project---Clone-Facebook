@@ -23,7 +23,7 @@ body {
 
 /*css for the input box*/
 .input-box {
-  width: 80%;
+  
   background-color: white;
   border: none;
   border-radius: 5%;
@@ -35,7 +35,7 @@ body {
 }
 /*css for the placeholder*/
 .input-box input {
-  line-height: 200%;
+  
   font-size: 170%;
   border: 1px solid rgb(221, 221, 221);
   border-radius: 3%;
@@ -48,7 +48,6 @@ body {
 /*css for the LOG IN button*/
 .input-box .btn-log-in {
   width: 100%;
-  line-height: 200%;
   border-radius: 3%;
   font-size: 150%;
   font-weight: bold;
@@ -62,8 +61,8 @@ body {
 
 .input-box .btn-new-acc {
   background-color: #35de35;
-  width: 60%;
-  line-height: 200%;
+  
+ 
   border-radius: 3%;
   font-size: 150%;
   font-weight: bold;
@@ -80,7 +79,7 @@ body {
 /*css for Create a Page*/
 
 .create-a-page {
-  width: 90%;
+ 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,8 +109,8 @@ body {
 }
 
 .language button {
-  width: 150%;
-  height: 50%;
+  
+  
   font-size: large;
   display: flex;
   align-items: center;
@@ -136,6 +135,6 @@ body {
 }
 /*css for hr tag in footer-box*/
 .hrr {
-  width: 96%;
+
   margin: auto;
 }

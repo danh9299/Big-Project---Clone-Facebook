@@ -1,15 +1,60 @@
-/*css for body*/
-body {
+body{
     background-color: #edf0f5;
-    width: 100%;
-  }
-
-.header{
     padding: 0px 0px;
+}
+/*css for body*/
+.header{
     background-color: white;
 }
-
-.header img{
-    width: 4%;
-    height:4%;
+/*css for logo and input area*/
+.logo-input{
+    display: flex;
+    align-items: center;
 }
+/*css for logo*/
+.logo-input img{
+    width:10%;
+    height:100%;
+}
+/*css for search bar*/
+.logo-input input{
+    width: 40%;
+    border:none;
+    border-radius: 10%/50%;
+    background-color: silver;
+}
+
+/*css for navigate area*/
+.nav-a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*css for user and notifications area*/
+.user-noti{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+/*css for user */
+.user{
+    display:flex;
+    align-items: center;
+}
+.user img{
+    width:40px;
+    height:40px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+/*css for noti button*/
+.noti button{
+    border:none;
+    background-color: silver;
+    border-radius: 50%;
+    
+}
+
