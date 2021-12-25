@@ -5,11 +5,17 @@ body{
 /*css for body*/
 .header{
     background-color: white;
+    border:none;
+    box-shadow: 1px 1px 1px 1px rgb(204, 204, 204);
 }
 /*css for logo and input area*/
 .logo-input{
     display: flex;
+    justify-content: left;
     align-items: center;
+    flex-direction: row;
+    column-gap: 10px;
+    
 }
 /*css for logo*/
 .logo-input img{
@@ -18,7 +24,8 @@ body{
 }
 /*css for search bar*/
 .logo-input input{
-    width: 40%;
+    width: 60%;
+    font-size: 20px;
     border:none;
     border-radius: 10%/50%;
     background-color: silver;
