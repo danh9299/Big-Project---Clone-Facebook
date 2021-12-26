@@ -94,3 +94,47 @@ body{
     text-decoration: none;
     color: rgb(61, 61, 61);
 }
+
+
+
+
+
+/*css for right side*/
+.main-right{
+    overflow: scroll;
+    height:800px;
+}
+/*css for the top area (list-icons)*/
+.list-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*css for icons buttons*/
+.list-icons span{
+    font-size: 30px;
+    color: rgb(107, 107, 107);
+}
+.list-icons button{
+    border:none;
+}
+
+/*css for the list*/
+
+.main-right h3{
+    color: rgb(107, 107, 107);
+}
+
+/*css for the chat available*/
+
+.chat-avail ul{
+    list-style-type: none;
+    display: inline;
+}
+
+.chat-avail li{
+display:flex;
+column-gap: 20px;
+align-items: center;
+}
