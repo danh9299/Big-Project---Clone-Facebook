@@ -1,0 +1,72 @@
+.container-fluid {
+    padding: 0;
+}
+
+.ava-cover {
+    padding-top: 56px !important;
+    display: flex;
+}
+
+.cover {
+    position: relative;
+    height: 348.141px;
+    background-color: black;
+    /* width: 940px; */
+    border-radius: 0 0 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.avatar {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background-color: blue;
+    bottom: -15px;
+    right: 0;
+    left: 0;
+    border-radius: 100px;
+    border: 4px solid white;
+}
+
+.change-ava {
+    width: 36px;
+    height: 36px;
+    background-color: aliceblue;
+    margin-top: 100px;
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.change-cover {
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    bottom: 0;
+    right: 0;
+}
+
+.btn {
+    position: absolute;
+    display: flex;
+    font-weight: 500;
+}
+
+.change-cover-icon {
+    padding-right: 5px;
+}
+
+.name {
+    text-align: center;
+    font-weight: 700;
+}
+
+.story {
+    text-align: center;
+}
+
+.navbar {
+    background-color: #fff !important;
+}
