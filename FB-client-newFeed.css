@@ -39,6 +39,17 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.nav-a a{
+    width:100px;
+    display: flex;
+    justify-content: center;
+}
+
+/*create effect for icons on navigate area*/
+.nav-a a:hover{
+    background-color:silver;
+}
+
 
 
 /*css for user and notifications area*/
@@ -54,6 +65,8 @@ body{
     align-items: center;
     flex-direction: row;
     column-gap: 10px;
+    border:none;
+    border-radius: 20%;
 }
 .user img{
     width:40px;
@@ -61,17 +74,26 @@ body{
     border: 1px solid;
     border-radius: 50%;
 }
-/*css for noti button*/
-.noti button{
-    border:none;
-    background-color: silver;
-    border-radius: 50%;
-    
+/*create effect for user button hover*/
+.user:hover{
+    background-color:silver;
 }
 
 
-/*css for main*/
+/*css for noti button*/
+.noti button{
+    border:none;
+    background-color: rgb(236, 236, 236);
+    border-radius: 50%;
+    
+}
+/*create effect for noti button hover*/
+.noti button:hover{
+    background-color:silver;
+}
 
+/*css for main*/
+/*---------------------------------------------------*/
 /*css for left side*/
 /*css for short-cut */
 .short-cut a{
@@ -94,9 +116,64 @@ body{
     text-decoration: none;
     color: rgb(61, 61, 61);
 }
+/*create hover effect for short-cut items*/
+.short-cut .user:hover{
+        background-color:silver;
+        cursor: pointer;
+}
+/*create hover effect for footer item*/
+.footer li:hover{
+    text-decoration: underline;
+}
+/*----------------------------------------------*/
+/*css for middle side*/
+/*css for story*/
+.story{
+    display: flex;
+    flex-wrap: nowrap;
+    width:100%;
+    overflow-x: scroll;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+
+.story button{
+    width: 150px;
+    height: 250px;
+    border: none;
+    border-radius: 10%;
+    background-image: url("img/storyPic.jpg");
+    background-size: 150px 250px;
+    font-size:25px;
+    color:white;
+    font-weight:600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.story button img{
+    width: 50px;
+    height: 50px;
+    border: solid rgb(57, 57, 221);
+    border-radius: 50%;
+}
+/*css create hover effect for story*/
+.story button:hover{
+    filter: blur(2px);
+    cursor: pointer;
+    
+}
 
 
+/*css for hidden scrollbar without removing functionality*/
+.story::-webkit-scrollbar {
+    display: none;
+}
 
+/*----------------------------------------------*/
 
 
 /*css for right side*/
@@ -137,4 +214,9 @@ body{
 display:flex;
 column-gap: 20px;
 align-items: center;
+}
+/*create hover effect for li*/
+.chat-avail li:hover{
+    background-color:silver;
+    cursor: pointer;
 }

@@ -91,7 +91,10 @@ body {
     font-weight: bold;
     color: black;
   }
-  
+   /*create hover effect for create a page*/
+   .create-a-page a:hover{
+  text-decoration: underline;
+}
   /*css for language*/
   
   .language {
@@ -119,6 +122,11 @@ body {
     justify-content: center;
     font-weight: bold;
   }
+
+/*create hover effect for language item*/
+.language li:hover{
+  text-decoration: underline;
+}
   
   /*css for option*/
   .option {
@@ -137,4 +145,7 @@ body {
     color: rgb(61, 61, 61);
   }
  
-  
+  /*create hover effect for option item*/
+.option li:hover{
+  text-decoration: underline;
+}
