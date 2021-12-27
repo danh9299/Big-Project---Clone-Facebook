@@ -1,0 +1,13 @@
+.flex-column li:hover{
+    background-color: silver;
+    cursor: pointer;
+}
+
+.general-option:hover{
+    background-color: silver;
+    cursor: pointer;
+}
+
+.general-option a:hover{
+    text-decoration: underline;
+}
