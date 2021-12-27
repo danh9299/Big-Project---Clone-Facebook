@@ -70,3 +70,29 @@
 .navbar {
     background-color: #fff !important;
 }
+
+.main-content {
+    background-color: #f0f2f5;
+}
+
+.add-intro {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.img {
+    position: relative;
+}
+
+.to-img {
+    position: absolute;
+    text-decoration: none;
+    font-size: 18px;
+    top: 24px;
+    right: 24px;
+}
