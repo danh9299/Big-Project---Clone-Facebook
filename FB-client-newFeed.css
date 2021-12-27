@@ -99,7 +99,9 @@ body {
 /*css for short-cut */
 .short-cut a {
   text-decoration: none;
+  color:black;
 }
+
 .footer ul {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +123,7 @@ body {
   background-color: silver;
   cursor: pointer;
 }
+
 /*create hover effect for footer item*/
 .footer li:hover {
   text-decoration: underline;
