@@ -44,22 +44,24 @@
                   type="email"
                   placeholder="Email hoặc số điện thoại"
                   class="form-control mt-3"
-                  id="exampleInputEmail1"
+                  id="txtEmail"
                   aria-describedby="emailHelp"
                 />
+                <p id="emailHelp1" class="form-text"></p>
               </div>
               <div class="mb-3">
                 <input
                   type="password"
                   placeholder="Mật khẩu"
                   class="form-control mt-3"
-                  id="exampleInputPassword1"
+                  id="txtPass"
                 />
+                <p id="passHelp1" class="form-text"></p>
               </div>
             </form>
             <!--Log In button-->
-            <button type="button" class="btn btn-log-in btn-primary mt-3">
-              Đăng nhập
+            <button type="button" id="btnforlogin" class="btn btn-log-in btn-primary mt-3">
+              <a href="#" id="loginA" style="text-decoration: none; color:white">Đăng nhập</a>
             </button>
             <!-- <a> for forgotten password-->
             <a href="#" class="mt-4">Quên mật khẩu?</a>
@@ -144,11 +146,14 @@
         <div class="row">Meta &copy; 2021</div>
       </div>
     </div>
+    
     <!--Bundle-->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <!--FB-client-login.js-->
+    <script src="FB-client-login.js"></script>
   </body>
 </html>
