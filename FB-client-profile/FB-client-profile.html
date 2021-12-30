@@ -179,24 +179,25 @@
             <!-- Cover -->
             <div class=" cover">
                 <!-- Avatar -->
-                <div class="container avatar">
-                    <div class="container circle"></div>
+                <div class="container ava-container">
+                    <a href="" class="">
+                        <img class="img-fluid avatar" src="/FB-client-profile/img/hinh-avatar-trang.jpg" alt="">
+                    </a>
                     <!-- Change avatar -->
-                    <button class="change-ava">
-                            <span class="material-icons-outlined change-ava-icon">
-                                photo_camera
-                                </span>
-                        </button>
+
+                    <a href="" class="change-ava">
+                        <span class="material-icons-outlined change-ava-icon">
+                            photo_camera
+                            </span>
+                    </a>
 
                 </div>
                 <!-- Change Cover -->
                 <div class="change-cover">
-                    <button type="button" class="btn btn-light p-1">
-                        <span class="material-icons-outlined change-cover-icon">
-                            photo_camera
-                            </span>
-                    Thêm ảnh bìa
-                    </button>
+                    <a href="" class="add-cover"><span class="material-icons-outlined">
+                        photo_camera
+                        </span>Thêm ảnh bìa
+                    </a>
                 </div>
             </div>
         </div>
@@ -207,63 +208,79 @@
         <p class="story">you were the one i tried to draw</p>
     </div>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+    <nav class="navbar ms-auto me-auto navbar-expand-lg navbar-light bg-light mx-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bài viết</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Bạn bè</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ảnh</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Xem thêm
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+                <div class="container-fluid">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Bài viết</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bạn bè</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ảnh</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Xem thêm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="container-fluid">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 nav-ul">
+                        <li class="nav-li">
+                            <a class="nav-btn nav-btn1" href="#">
+                                <span class="material-icons-outlined">
+                                    add_circle
+                                </span> Thêm vào tin
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Thêm vào tin</a>
-                    </li>
+                        <li class="nav-li">
+                            <a class="nav-btn2 nav-btn" href="#">
+                                <span class="material-icons-outlined">
+                                    edit
+                                    </span> Chỉnh sửa trang cá nhân
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Chỉnh sửa trang cá nhân</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="material-icons-outlined">
-                                more_horiz
-                                </span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Chế độ Xem</a></li>
-                            <li><a class="dropdown-item" href="#">Tìm kiếm trên trang cá nhân</a></li>
-                            <li><a class="dropdown-item" href="#">Trạng thái tài khoản</a></li>
-                            <li><a class="dropdown-item" href="#">Kho lưu trữ</a></li>
-                            <li><a class="dropdown-item" href="#">Kho lưu trữ tin</a></li>
-                            <li><a class="dropdown-item" href="#">Nhật ký hoạt động</a></li>
-                            <li><a class="dropdown-item" href="#">Cài đặt trang cá nhân và gắn thẻ</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li class="nav-li dropdown  ">
+                            <a class="nav-btn nav-btn3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-icons-outlined">
+                                    more_horiz
+                                    </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Chế độ Xem</a></li>
+                                <li><a class="dropdown-item" href="#">Tìm kiếm trên trang cá nhân</a></li>
+                                <li><a class="dropdown-item" href="#">Trạng thái tài khoản</a></li>
+                                <li><a class="dropdown-item" href="#">Kho lưu trữ</a></li>
+                                <li><a class="dropdown-item" href="#">Kho lưu trữ tin</a></li>
+                                <li><a class="dropdown-item" href="#">Nhật ký hoạt động</a></li>
+                                <li><a class="dropdown-item" href="#">Cài đặt trang cá nhân và gắn thẻ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
@@ -287,113 +304,47 @@
 
                     <div class="container img bg-white m-3 p-4 rounded-3">
                         <p><span style="font-weight: 700; font-size: 18px;">Ảnh</span> <a href="" class="to-img">Xem tất cả ảnh</a></p>
-                        <div class="row mb-3">
-                            <div class="col-md-4">
+                        <div class="grid-img-container">
+                            <div class="pic-1">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
-                            <div class="col-md-4">
+                            <div class="pic-2">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
-                            <div class="col-md-4">
+                            <div class="pic-3">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
+                            <div class="pic-3">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
                         </div>
 
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                        </div>
+
                     </div>
 
                     <div class="container img bg-white m-3 p-4 rounded-3">
                         <p><span style="font-weight: 700; font-size: 18px;">Bạn Bè</span> <a href="" class="to-img">Xem tất cả bạn bè</a></p>
                         <p class="">435 người bạn</p>
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
+                        <div class="grid-friends-container">
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
 
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
 
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-                        </div>
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
 
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
