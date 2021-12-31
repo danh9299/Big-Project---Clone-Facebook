@@ -1,0 +1,82 @@
+.noti-area{
+    background-color: white;
+    border:none;
+    border-radius: 10px;
+}
+/*css for noti-title*/
+.noti-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.noti-title button{
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+}
+.noti-title button:hover{
+    background-color: grey;
+}
+
+.button-option button{
+    border:none;
+    border-radius: 25%/50%;
+}
+
+/*css for noti-detail*/
+.noti-detail{
+    column-gap: 3px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.noti-detail:hover{
+    background-color: rgb(197, 197, 197);
+    cursor:pointer;
+}
+.noti-detail:hover .noti-btn{
+    display: block;
+}
+
+
+.noti-detail img{
+    width:45px;
+    height:45px;
+    cursor: pointer;
+    border:none;
+    border-radius: 50%;
+    
+}
+
+.noti-detail button{
+    border:1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    display:none;
+}
+.noti-detail button:hover{
+    background-color: grey;
+}
+.noti-detail button span{
+   font-size:14px;
+
+}
+.text-noti{
+    display:flex;
+    flex-direction: column;
+}
+
+.friend-request-buttons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    padding-left: 20px;
+}
+.friend-request-buttons button{
+    width:20%;
+
+}
+
+.main{
+    width:50%;
+}
