@@ -2,6 +2,15 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+}
+
 .ava-cover {
     padding-top: 56px !important;
     display: flex;
@@ -63,10 +72,24 @@
 }
 
 .add-cover:hover,
-.change-ava:hover {
+.change-ava:hover,
+.edit-profile:hover,
+.nav-btn3:hover,
+.right-content-li>a:hover,
+.like-cmt-share-btn>a:hover {
     cursor: pointer;
     color: #000;
-    background-color: #f2f2f2;
+    background-color: #e4e6e9;
+}
+
+.nav-btn1:hover {
+    color: #fff;
+}
+
+.add-status:hover {
+    cursor: pointer;
+    color: #65676b;
+    background-color: #e4e6e9;
 }
 
 .btn {
@@ -89,11 +112,18 @@
 }
 
 .navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     background-color: #fff !important;
 }
 
 .main-content {
-    background-color: #f0f2f5;
+    max-width: 908px;
+}
+
+.left-container {
+    max-width: 360px;
 }
 
 .add-intro {
@@ -106,7 +136,8 @@
     font-weight: 500;
 }
 
-.img {
+.img,
+.friends {
     position: relative;
 }
 
@@ -172,4 +203,97 @@
     text-decoration: none;
     display: flex;
     text-align: center;
+}
+
+.right-container {
+    position: relative;
+    padding: 12px 16px 0px;
+}
+
+.main-status {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 0 0 10px 0;
+}
+
+.small-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    margin-right: 8px;
+}
+
+.add-status {
+    position: absolute;
+    padding: 8px 12px;
+    width: 85%;
+    text-decoration: none;
+    color: #65676b;
+    font-size: 1.0625rem;
+    background-color: #f0f2f5;
+    border-radius: 25px;
+}
+
+ul {
+    padding: 0;
+}
+
+.right-content-li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px;
+}
+
+.right-content-li>a {
+    display: flex;
+    padding: 10px 16px;
+    border-radius: 10px;
+}
+
+.header-status,
+.status-counter {
+    display: flex;
+}
+
+.header-status>ul>li {
+    list-style: none;
+    line-height: 17px;
+}
+
+.header-status .small-name a {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.header-status .small-time a {
+    display: flex;
+    font-size: 12px;
+}
+
+.public-icon {
+    font-size: 15px !important;
+}
+
+.cmt-share-counter {
+    position: absolute;
+    right: 16px;
+}
+
+.like-cmt-share-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.like-cmt-share-btn>a {
+    line-height: 44px;
+    padding: 0 32px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.like-cmt-share-icon {
+    padding-right: 10px;
 }
