@@ -74,3 +74,18 @@
 .right-header-m-c i:hover{
     background-color: bisque;
 }
+/* css for main-m-c */
+.left-main-m-c{
+    display: flex;
+}
+.left-main-m-c img{
+    width: 55px;
+    height: 35px;
+    border-radius: 30px;
+}
+.box{
+    padding: 4px;
+    background-color: darkgray;
+    border-radius: 30px;
+    background-size: auto
+}

@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Link Css -->
     <link rel="stylesheet" href="/FB-client-profile/FB-client-profile.css">
+     <!--CSS for header -->
+     <link rel="stylesheet" href="../FB-client-newFeed.css" />
     <!-- Icon -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
 
@@ -20,32 +22,182 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Two+Tone" rel="stylesheet">
     <title>Profile</title>
+    <!--Logo for title-->
+    <link rel="SHORTCUT ICON" href="../img/fbLogoPNG.png" />
 </head>
 
 <body>
+    <!--header navbar-->
+    <div class="container-fluid header">
+        <div class="row justify-content-between">
+          <!--logo and input area-->
+          <div class="col-md-3 logo-input">
+            <!--logo-->
+            <img src="../img/fbLogoPNG.png" alt="" />
+            <!--search form-->
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Tìm kiếm trên Facebook"
+              aria-label="Search"
+            />
+          </div>
+          <!-- Navigate area-->
+          <div class="col-md-5 nav-a">
+            <!--home-->
+            <a href="FB-client-newFeed.html"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                class="bi bi-house-door"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"
+                /></svg></a>
+            <!--friends-->
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                class="bi bi-people"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                /></svg></a>
+            <!--watch-->
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                class="bi bi-collection-play"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1zm2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848l-4-2.5z"
+                />
+                <path
+                  d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5h13z"
+                /></svg></a>
+            <!--market place-->
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                class="bi bi-shop"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z"
+                /></svg></a>
+            <!--group-->
+            <a href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                class="bi bi-person-circle"
+                viewBox="0 0 16 16"
+              >
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path
+                  fill-rule="evenodd"
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"
+                /></svg></a>
+          </div>
+          <!--user and notifications area-->
+          <div class="col-md-3 user-noti">
+            <div class="user">
+              <img src="../img/pictureProfile.png" />
+              <h6>Client ABC</h6>
+            </div>
+            <div class="noti">
+              <!--grid-->
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  class="bi bi-grid-3x3-gap-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"
+                  />
+                </svg>
+              </button>
+              <!--messenger-->
+              <button href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  class="bi bi-messenger"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.639.639 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.639.639 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76zm5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"
+                  />
+                </svg>
+              </button>
+              <!--notification-->
+              <button href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  class="bi bi-bell-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"
+                  /></svg></button>
+              <!--account-->
+              <button href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  class="bi bi-caret-down-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                  /></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="container-fluid ava-cover">
         <div class="container">
             <!-- Cover -->
             <div class=" cover">
                 <!-- Avatar -->
-                <div class="container avatar">
-                    <div class="container circle"></div>
+                <div class="container ava-container">
+                    <a href="" class="">
+                        <img class="img-fluid avatar" src="/FB-client-profile/img/hinh-avatar-trang.jpg" alt="">
+                    </a>
                     <!-- Change avatar -->
-                    <button class="change-ava">
-                            <span class="material-icons-outlined change-ava-icon">
-                                photo_camera
-                                </span>
-                        </button>
+
+                    <a href="" class="change-ava">
+                        <span class="material-icons-outlined change-ava-icon">
+                            photo_camera
+                            </span>
+                    </a>
 
                 </div>
                 <!-- Change Cover -->
                 <div class="change-cover">
-                    <button type="button" class="btn btn-light p-1">
-                        <span class="material-icons-outlined change-cover-icon">
-                            photo_camera
-                            </span>
-                    Thêm ảnh bìa
-                    </button>
+                    <a href="" class="add-cover"><span class="material-icons-outlined">
+                        photo_camera
+                        </span>Thêm ảnh bìa
+                    </a>
                 </div>
             </div>
         </div>
@@ -56,71 +208,88 @@
         <p class="story">you were the one i tried to draw</p>
     </div>
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+    <nav class="navbar ms-auto me-auto navbar-expand-lg navbar-light bg-light mx-5">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bài viết</a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Bạn bè</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ảnh</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Xem thêm
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
+                <div class="container-fluid">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Bài viết</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Bạn bè</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Ảnh</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Xem thêm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
 
+                <div class="container-fluid">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0 nav-ul">
+                        <li class="nav-li">
+                            <a class="nav-btn nav-btn1" href="#">
+                                <span class="material-icons-outlined">
+                                    add_circle
+                                </span> Thêm vào tin
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Thêm vào tin</a>
-                    </li>
+                        <li class="nav-li">
+                            <a class="nav-btn2 nav-btn edit-profile" href="">
+                                <span class="material-icons-outlined">
+                                    edit
+                                    </span> Chỉnh sửa trang cá nhân
+                            </a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Chỉnh sửa trang cá nhân</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <span class="material-icons-outlined">
-                                more_horiz
-                                </span>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Chế độ Xem</a></li>
-                            <li><a class="dropdown-item" href="#">Tìm kiếm trên trang cá nhân</a></li>
-                            <li><a class="dropdown-item" href="#">Trạng thái tài khoản</a></li>
-                            <li><a class="dropdown-item" href="#">Kho lưu trữ</a></li>
-                            <li><a class="dropdown-item" href="#">Kho lưu trữ tin</a></li>
-                            <li><a class="dropdown-item" href="#">Nhật ký hoạt động</a></li>
-                            <li><a class="dropdown-item" href="#">Cài đặt trang cá nhân và gắn thẻ</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                        <li class="nav-li dropdown  ">
+                            <a class="nav-btn nav-btn3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-icons-outlined">
+                                    more_horiz
+                                    </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Chế độ Xem</a></li>
+                                <li><a class="dropdown-item" href="#">Tìm kiếm trên trang cá nhân</a></li>
+                                <li><a class="dropdown-item" href="#">Trạng thái tài khoản</a></li>
+                                <li><a class="dropdown-item" href="#">Kho lưu trữ</a></li>
+                                <li><a class="dropdown-item" href="#">Kho lưu trữ tin</a></li>
+                                <li><a class="dropdown-item" href="#">Nhật ký hoạt động</a></li>
+                                <li><a class="dropdown-item" href="#">Cài đặt trang cá nhân và gắn thẻ</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
-    <div class="container-fluid main-content ">
-        <div class="container">
+    <div class="container-fluid" style="background-color: #f0f2f5">
+        <div class="container-fluid main-content">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="container bg-white m-3 intro p-4 rounded-3">
+                <div class="col-md-5 p-0 m-0 left-content">
+                    <!-- Intro -->
+                    <div class="container-fluid bg-white m-3 intro p-4 rounded-3 left-container">
                         <h4>Giới thiệu</h4>
                         <p>Học IT - công nghệ thông tin tại <a href="" style="font-weight: 700; color: black; text-decoration: none;">Đại học Thủy Lợi</a></p>
                         <p>Đến từ <a href="" style="font-weight: 700; color: black; text-decoration: none;">Ninh Bình</a>
@@ -133,123 +302,316 @@
                         <button class="add-intro mt-3">Thêm nội dung đáng chú ý</button>
 
                     </div>
-
-                    <div class="container img bg-white m-3 p-4 rounded-3">
+                    <!-- Images -->
+                    <div class="container-fluid img bg-white m-3 p-4 rounded-3 left-container">
                         <p><span style="font-weight: 700; font-size: 18px;">Ảnh</span> <a href="" class="to-img">Xem tất cả ảnh</a></p>
-                        <div class="row mb-3">
-                            <div class="col-md-4">
+                        <div class="grid-img-container">
+                            <div class="pic-1">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
-                            <div class="col-md-4">
+                            <div class="pic-2">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
-                            <div class="col-md-4">
+                            <div class="pic-3">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
-                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
-                            </div>
-                            <div class="col-md-4">
+                            <div class="pic-3">
                                 <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="mx-auto img-fluid" alt="...">
                             </div>
                         </div>
                     </div>
-
-                    <div class="container img bg-white m-3 p-4 rounded-3">
+                    <!-- Friends -->
+                    <div class="container-fluid friends bg-white m-3 p-4 rounded-3 left-container">
                         <p><span style="font-weight: 700; font-size: 18px;">Bạn Bè</span> <a href="" class="to-img">Xem tất cả bạn bè</a></p>
                         <p class="">435 người bạn</p>
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
+                        <div class="grid-friends-container">
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
 
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
 
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-                        </div>
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
 
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
-
-                            <div class="col-md-4">
-                                <figure class="figure">
-                                    <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
-                                    <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
-                                </figure>
-                            </div>
+                            <figure class="figure">
+                                <img src="/FB-client-profile/img/hinh-avatar-trang.jpg" class="figure-img img-fluid rounded" alt="...">
+                                <figcaption class="figure-caption">Nguyễn Thị B</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
 
+                <!-- Main content -->
 
-                <div class="col-md-7 bg-white m-3 rounded-3 ">
+                <div class="col-md-7 m-0 p-0 ">
+                    <div class="container-fluid bg-white mt-3 right-container rounded-3">
+                        <div class="container-fluid main-status">
+                            <a href="/FB-client-profile/FB-client-profile.html" class="">
+                                <img class="img-fluid small-avatar" src="/FB-client-profile/img/hinh-avatar-trang.jpg" alt="">
+                            </a>
 
+                            <a href="" class="add-status">Bạn đang nghĩ gì</a>
+                        </div>
+                        <ul class="right-content-ul">
+                            <li class="right-content-li">
+                                <a href=""><span class="material-icons-outlined">
+                                    video_call
+                                    </span>Video trực tiếp</a>
+                            </li>
+                            <li class="right-content-li">
+                                <a href=""><span class="material-icons-outlined">
+                                    collections
+                                    </span>Ảnh/Video</a>
+                            </li>
+                            <li class="right-content-li">
+                                <a href=""><span class="material-icons-outlined">
+                                    outlined_flag
+                                    </span>Sự kiện trong đời</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Status container -->
+                    <div class="container-fluid bg-white mt-3 right-container rounded-3 status">
+                        <div class="container-fluid status">
+                            <div class="container-fluid header-status">
+                                <a href="/FB-client-profile/FB-client-profile.html" class="">
+                                    <img class="img-fluid small-avatar" src="/FB-client-profile/img/hinh-avatar-trang.jpg" alt="">
+                                </a>
+                                <ul>
+                                    <li class="small-name">
+                                        <a href="/FB-client-profile/FB-client-profile.html">Nguyễn Văn A</a>
+                                    </li>
+                                    <li class="small-time ">
+                                        <a href="" class="text-muted">
+                                            12 Tháng 12, 2021 lúc 19:50 . 
+                                            <span class="public-icon material-icons-outlined">
+                                                public
+                                                </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-fluid main-status">
+                                <p> 2022 rồi!!!!</p>
+                                <img class="img-fluid" src="/FB-client-profile/img/status1.jpg" alt="">
+                                <div class="container-fluid status-counter pt-2">
+                                    <div class="like-counter">
+                                        <a class="text-muted" href="">11k</a>
+                                    </div>
+                                    <div class="cmt-share-counter">
+                                        <a class="text-muted" href="">192 bình luận </a>
+                                        <a class="text-muted" href="">115 lượt chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid like-cmt-share-container">
+                                <div class="row">
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a class="" href="">
+                                            <span class="material-icons-outlined like-cmt-share-icon">
+                                                thumb_up
+                                            </span> Thích
+                                        </a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            chat_bubble_outline
+                                            </span>Bình Luận</a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn ">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            share
+                                            </span>Chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Status -->
+                    <div class="container-fluid bg-white mt-3 right-container rounded-3 status">
+                        <div class="container-fluid status">
+                            <div class="container-fluid header-status">
+                                <a href="/FB-client-profile/FB-client-profile.html" class="">
+                                    <img class="img-fluid small-avatar" src="/FB-client-profile/img/hinh-avatar-trang.jpg" alt="">
+                                </a>
+                                <ul>
+                                    <li class="small-name">
+                                        <a href="/FB-client-profile/FB-client-profile.html">Nguyễn Văn A</a>
+                                    </li>
+                                    <li class="small-time ">
+                                        <a href="" class="text-muted">
+                                            12 Tháng 12, 2021 lúc 19:50 . 
+                                            <span class="public-icon material-icons-outlined">
+                                                public
+                                                </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-fluid main-status">
+                                <p> 2022 rồi!!!!</p>
+                                <img class="img-fluid" src="/FB-client-profile/img/status1.jpg" alt="">
+                                <div class="container-fluid status-counter pt-2">
+                                    <div class="like-counter">
+                                        <a class="text-muted" href="">11k</a>
+                                    </div>
+                                    <div class="cmt-share-counter">
+                                        <a class="text-muted" href="">192 bình luận </a>
+                                        <a class="text-muted" href="">115 lượt chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid like-cmt-share-container">
+                                <div class="row">
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a class="" href="">
+                                            <span class="material-icons-outlined like-cmt-share-icon">
+                                                thumb_up
+                                            </span> Thích
+                                        </a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            chat_bubble_outline
+                                            </span>Bình Luận</a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn ">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            share
+                                            </span>Chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid bg-white mt-3 right-container rounded-3 status">
+                        <div class="container-fluid status">
+                            <div class="container-fluid header-status">
+                                <a href="/FB-client-profile/FB-client-profile.html" class="">
+                                    <img class="img-fluid small-avatar" src="/FB-client-profile/img/hinh-avatar-trang.jpg" alt="">
+                                </a>
+                                <ul>
+                                    <li class="small-name">
+                                        <a href="/FB-client-profile/FB-client-profile.html">Nguyễn Văn A</a>
+                                    </li>
+                                    <li class="small-time ">
+                                        <a href="" class="text-muted">
+                                            12 Tháng 12, 2021 lúc 19:50 . 
+                                            <span class="public-icon material-icons-outlined">
+                                                public
+                                                </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-fluid main-status">
+                                <p> 2022 rồi!!!!</p>
+                                <img class="img-fluid" src="/FB-client-profile/img/status1.jpg" alt="">
+                                <div class="container-fluid status-counter pt-2">
+                                    <div class="like-counter">
+                                        <a class="text-muted" href="">11k</a>
+                                    </div>
+                                    <div class="cmt-share-counter">
+                                        <a class="text-muted" href="">192 bình luận </a>
+                                        <a class="text-muted" href="">115 lượt chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid like-cmt-share-container">
+                                <div class="row">
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a class="" href="">
+                                            <span class="material-icons-outlined like-cmt-share-icon">
+                                                thumb_up
+                                            </span> Thích
+                                        </a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            chat_bubble_outline
+                                            </span>Bình Luận</a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn ">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            share
+                                            </span>Chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid bg-white mt-3 right-container rounded-3 status">
+                        <div class="container-fluid status">
+                            <div class="container-fluid header-status">
+                                <a href="/FB-client-profile/FB-client-profile.html" class="">
+                                    <img class="img-fluid small-avatar" src="/FB-client-profile/img/hinh-avatar-trang.jpg" alt="">
+                                </a>
+                                <ul>
+                                    <li class="small-name">
+                                        <a href="/FB-client-profile/FB-client-profile.html">Nguyễn Văn A</a>
+                                    </li>
+                                    <li class="small-time ">
+                                        <a href="" class="text-muted">
+                                            12 Tháng 12, 2021 lúc 19:50 . 
+                                            <span class="public-icon material-icons-outlined">
+                                                public
+                                                </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="container-fluid main-status">
+                                <p> 2022 rồi!!!!</p>
+                                <img class="img-fluid" src="/FB-client-profile/img/status1.jpg" alt="">
+                                <div class="container-fluid status-counter pt-2">
+                                    <div class="like-counter">
+                                        <a class="text-muted" href="">11k</a>
+                                    </div>
+                                    <div class="cmt-share-counter">
+                                        <a class="text-muted" href="">192 bình luận </a>
+                                        <a class="text-muted" href="">115 lượt chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid like-cmt-share-container">
+                                <div class="row">
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a class="" href="">
+                                            <span class="material-icons-outlined like-cmt-share-icon">
+                                                thumb_up
+                                            </span> Thích
+                                        </a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            chat_bubble_outline
+                                            </span>Bình Luận</a>
+                                    </div>
+                                    <div class="container-fluid col-md-4 like-cmt-share-btn ">
+                                        <a href=""><span class="material-icons-outlined like-cmt-share-icon">
+                                            share
+                                            </span>Chia sẻ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
