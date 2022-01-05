@@ -1,91 +1,187 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
 }
 
-.left-main{
-    border-right: solid 0.4px grey;
+.left-main {
+  border-right: solid 0.4px grey;
 }
 /* .header-l-m{
     position: fixed;
    
 } */
-.top-header-l-m{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
+.top-header-l-m {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
-.nav-top-header-l-m i{
-    padding: 10px;
-    margin-right: 10px;
-    border-radius: 20px;
-    background-color: fefefe;
-    
+.nav-top-header-l-m i {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 20px;
+  background-color: fefefe;
 }
-.nav-top-header-l-m i:hover{
-    background-color: bisque;
+.nav-top-header-l-m i:hover {
+  background-color: bisque;
 }
-.main-l-m{
-    display: flex;
-    align-items: center;
+.main-l-m {
+  display: flex;
+  align-items: center;
 }
-.main-l-m img{
-    width: 40px;
-    height: 40px;
-    border-radius: 25px;
-    margin-right: 15px;
-    margin-bottom: 15px;
+.main-l-m img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  margin-right: 15px;
+  margin-bottom: 15px;
 }
 
-.main-content{
-    margin: 0%;
-    /* margin-top: 55px; */
-    /* padding-bottom: 5px; */
-    border-right: solid 0.4px grey;
+.main-content {
+  margin: 0%;
+  /* margin-top: 55px; */
+  /* padding-bottom: 5px; */
+  border-right: solid 0.4px grey;
 }
-.header-m-c{
-    border-bottom: solid 0.4px grey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header-m-c {
+  border-bottom: solid 0.4px grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.left-header-m-c{
-    display: flex;
-    align-items: center;
+.left-header-m-c {
+  display: flex;
+  align-items: center;
 }
-.left-header-m-c img{
-    width: 35px;
-    height: 35px;
-    border-radius: 30px;
-    
+.left-header-m-c img {
+  width: 35px;
+  height: 35px;
+  border-radius: 30px;
 }
-.content-left-header-m-c{
-    line-height: 8px;
-    margin-left: 5px;
+.content-left-header-m-c {
+  line-height: 8px;
+  margin-left: 5px;
 }
-.right-header-m-c i{
-    margin-right: 10px;
-    background-color:#ccc;
-    padding: 7px;
-    border-radius: 20px;
+.right-header-m-c i {
+  margin-right: 10px;
+  background-color: #ccc;
+  padding: 7px;
+  border-radius: 20px;
 }
-.right-header-m-c i:hover{
-    background-color: bisque;
+.right-header-m-c i:hover {
+  background-color: bisque;
 }
 /* css for main-m-c */
-.left-main-m-c{
-    display: flex;
+.left-main-m-c {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
 }
-.left-main-m-c img{
-    width: 55px;
-    height: 35px;
-    border-radius: 30px;
+.left-main-m-c .avt {
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  margin-right: 5px;
 }
-.box{
-    padding: 4px;
-    background-color: darkgray;
-    border-radius: 30px;
-    background-size: auto
+.avt {
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+#myIBB span {
+  color: white;
+  background-color: rgb(49, 127, 245);
+  width: 74%;
+  padding-left: 10px;
+  margin-left: 50px;
+}
+/* #myIB img {
+  max-width: 100px;
+  padding-left: 0px;
+} */
+.box {
+  padding: 4px;
+  background-color: rgb(206, 206, 206);
+  border-radius: 30px;
+  margin-left: 10px;
+  width: 33%;
+  padding-left: 15px;
+}
+#myib2 {
+  margin-top: 7px;
+}
+#box {
+  margin-left: 40px;
+}
+#icon {
+  color: rgb(34, 82, 238);
+  font-size: x-large;
+  padding-left: 5px;
+}
+#iconinput {
+  color: rgb(34, 82, 238);
+  font-size: x-large;
+  padding-left: 10px;
+  align-items: center;
+}
+#input {
+  border-radius: 20px;
+  font-size: x-large;
+  width: 70%;
+  margin-left: 10px;
+}
+
+.footer {
+  position: relative;
+}
+.footer i1 {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  color: rgb(34, 82, 238);
+  padding-top: 8px;
+}
+#iconinput {
+  padding-left: 530px;
+}
+#iconLike {
+  color: rgb(34, 82, 238);
+  font-size: xx-large;
+}
+#input ::placeholder {
+  color: rgb(36, 194, 49);
+  padding-left: 20px;
+}
+
+.avartar {
+  text-align: center;
+  padding-top: 20px;
+}
+.avartar i {
+  font-size: 100px;
+  color: #ccc;
+}
+.avartar p {
+  font-weight: bold;
+  font-size: large;
+}
+.detail {
+  font-weight: 450;
+}
+#iconDetail {
+  color: rgb(34, 82, 238);
+  padding-top: 5px;
+}
+#iconDetail1 {
+  padding-top: 5px;
+}
+#iconDetail2 {
+  padding-top: 5px;
+}
+.hove:hover{
+  background-color: darksalmon;
+  cursor: pointer;
+  border-radius: 30px;
 }
