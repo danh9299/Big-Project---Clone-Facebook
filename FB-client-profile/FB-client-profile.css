@@ -305,12 +305,22 @@ a:hover {
     padding: 10px;
 }
 
+.grid-img-container img {
+    width: 90px;
+    height: 90px;
+}
+
 .grid-friends-container {
     display: grid;
     grid: 120px 120px / auto auto auto;
     grid-gap: 10px;
     background-color: #fff;
     padding: 10px;
+}
+
+.grid-friends-container img {
+    width: 90px;
+    height: 90px;
 }
 
 

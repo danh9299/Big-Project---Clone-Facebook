@@ -23,10 +23,13 @@ a:hover {
 /* header-nav */
 
 .head-nav {
+    position: fixed;
     background-color: white;
     border: none;
     box-shadow: 1px 1px 1px 1px rgb(204, 204, 204);
     padding: 10px;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-input {
@@ -167,23 +170,29 @@ a:hover {
 /* heder button */
 
 .header-btn {
+    position: relative;
     margin: 0 auto;
     max-width: 908px;
 }
 
-.header-btn ul {
-    display: inline-flex;
+.header-btn>ul {
+    display: flex;
 }
 
 .header-btn img {
     margin: 0;
 }
 
+.header-right-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 
 /* Nav bar */
 
 .navbar {
-    top: 0;
     background-color: #fff !important;
     max-width: 908px;
     margin: 0 16px;
@@ -221,6 +230,25 @@ a:hover {
     border-radius: 7px;
     text-decoration: none;
     display: flex;
+}
+
+.nav-icon0 {
+    margin: 0;
+    position: absolute;
+    right: 155px;
+    width: 166px;
+}
+
+.nav-icon0>a {
+    background: #d8dadf;
+    line-height: 24px;
+    padding: 6px 0;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
 }
 
 .nav-icon1 {
