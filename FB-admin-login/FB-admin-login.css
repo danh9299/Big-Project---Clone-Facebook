@@ -1,0 +1,26 @@
+html{
+    background-image:url("img/background-html.jpg");
+}
+
+  
+
+.login-admin{
+    border: 20px solid rgb(156, 46, 142); 
+    align-items: center;
+    margin-top: 5%;
+    background-color: rgb(122, 194, 236);
+    
+}
+
+
+
+.login-area{
+    padding: 20px 30px;
+}
+
+
+.note{
+    background-color: black;
+    color:red;
+    padding: 10px 5px;
+}
