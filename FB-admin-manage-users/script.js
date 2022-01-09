@@ -3,6 +3,8 @@ let inputplaceholder = document.getElementById("inputplaceholder");
 let abc = document.getElementById("choose");
 
 abc.addEventListener("click",Func1);
+
+//adjust the placeholder of searchbar
 function Func1(){
 let after = document.getElementById("after").value;
 if (after == 1){

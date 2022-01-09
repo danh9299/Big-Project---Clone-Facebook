@@ -51,15 +51,16 @@ cursor:pointer;
     flex-direction: row;
     justify-content: space-between;
 }
-#head-button a{
+.head-button a{
     text-decoration: none;
     color:black;
 }
-#head-button{
+.head-button{
     display: flex;
     align-items: center;
+    background-color: silver;
 }
-#head-button:hover{
+.head-button:hover{
     background-color: pink;
 }
 
@@ -92,4 +93,18 @@ li:hover{
 /*css for right*/
 #delete-btn:hover{
     background-color: pink;
+}
+
+#choose:hover{
+    background-color: pink;
+}
+
+
+#tblList{
+    color:rgb(255, 255, 255);
+    background-color: rgb(97, 97, 97);
+}
+
+tr:hover{
+    background-color: rgb(226, 226, 226);
 }
