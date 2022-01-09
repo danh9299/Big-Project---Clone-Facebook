@@ -39,13 +39,13 @@ let txtPass  = document.getElementById("txtPass");
 let btnLogin = document.getElementById("btnforlogin");
 let check1 = false; //the check1 is to see whether the email is correct with standard of Regex or not
 let check2 = false;//the check2 is to see whether the password is correct with standard of Regex or not
-//let loginA = document.getElementById("loginA");
+let loginA = document.getElementById("loginA");
 
 // Function
 btnLogin.addEventListener("click",Func1);
 function Func1(){  
     checkEmailValidate(txtEmail.value);
     checkPasswordValidate(txtPass.value);
- //   if (check1 == true & check2 == true)
-   //     loginA.href="FB-client-newFeed.html";
+    if (check1 == true & check2 == true)
+        loginA.href="../FB-admin-manage-users/FB-admin-manage-user.html";
 }

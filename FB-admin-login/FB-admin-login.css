@@ -1,4 +1,4 @@
-html{
+html, body{
     background-image:url("img/background-html.jpg");
 }
 
@@ -7,20 +7,23 @@ html{
 .login-admin{
     border: 20px solid rgb(156, 46, 142); 
     align-items: center;
-    margin-top: 5%;
-    background-color: rgb(122, 194, 236);
-    
+    background-color: rgb(122, 236, 141);
+    width:70%;
+    margin: auto;
 }
 
 
 
 .login-area{
     padding: 20px 30px;
+    background-color: pink;
 }
 
 
 .note{
     background-color: black;
     color:red;
+    width:70%;
+    margin:auto;
     padding: 10px 5px;
 }

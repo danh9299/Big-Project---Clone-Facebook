@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý Tài Khoản</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--CSS for login page-->
+    <link rel="stylesheet" href="FB-admin-manage-user.css" />
+    <!--Google font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!--Logo for title-->
+    <link rel="SHORTCUT ICON" href="../img/fbLogoPNG.png" />
+  </head>
+  <body>
+    <!--Header-->
+    <div class="container-fluid header">
+      <div class="row">
+        <div class="col-3 title">
+          <img src="../FB-admin-login/img/R.png" />
+          <h4>Admin Facebook</h4>
+        </div>
+        <div class="col-4 search-bar">
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >Tìm kiếm</span
+            >
+            <input type="text" class="form-control input-search" />
+          </div>
+        </div>
+        <div class="col-5 btns">
+          <button id="head-button">
+            Giao diện màu: <span class="material-icons"> brightness_5 </span>
+          </button>
+          <button id="head-button">
+            Thông tin Admin: <span class="material-icons"> account_box </span>
+          </button>
+          <button id="head-button">
+            Cài đặt: <span class="material-icons"> settings </span>
+          </button>
+          <button id="head-button">
+            <a href="../FB-admin-login/FB-admin-login.html">
+              Thoát: <span class="material-icons"> exit_to_app </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--main-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--left-->
+        <div class="col-3 left">
+          <h3 class="mt-3"><u>Danh mục quản lý______</u></h3>
+          <ul class="mt-2">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#" style="color: blue">Quản lý người dùng</a></li>
+            <li><a href="#">Người dùng đăng ký Facebook</a></li>
+            <li><a href="#">Danh sách người lâu không sử dụng Facebook</a></li>
+            <li><a href="#">Sinh nhật người dùng hôm nay</a></li>
+            <li><a href="#">Hòm thư khiếu nại</a></li>
+            <li><a href="#">Báo cáo vi phạm tiêu chuẩn</a></li>
+            <li><a href="#">Quản trị server</a></li>
+            <li><a href="#">Báo cáo hoạt động gần đây</a></li>
+            <li><a href="#">Lên lịch cho các sự kiện</a></li>
+            <li><a href="#">Lượt truy cập</a></li>
+            <li><a href="#">Doanh thu từ chạy quảng cáo</a></li>
+          </ul>
+        </div>
+        <!--right-->
+        <div class="col-9 right">
+          <h3 class="mt-3 text-center"><u>____Danh sách người dùng____</u></h3>
+          <!--Searching user type-->
+          <div class="row mt-2 mb-2">
+            <div class="col-4">
+          <select class="form-control" id="after">
+            <option selected>Tìm kiếm người dùng theo: </option>
+            <option value="1">Tên</option>
+            <option value="2">Số điện thoại</option>
+            <option value="3">Email</option>
+            <option value="4">Tên tài khoản</option>
+          </select>
+          <button class="mt-2" id ="choose">Xác nhận loại tìm kiếm </button>
+        </div>
+        <!--Searching user-->
+        <div class="col-4">
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping">Tìm</span>
+            <input type="text" class="form-control" id="inputplaceholder" placeholder="Nhập thông tin tìm kiếm" aria-label="Username" aria-describedby="addon-wrapping">
+          </div>
+        </div>
+        <div class="col-4">
+          <select class="form-control" id="after">
+            <option selected>Sắp xếp danh sách theo: </option>
+            <option value="1">Tên</option>
+            <option value="2">Số điện thoại</option>
+            <option value="3">Email</option>
+            <option value="4">Tên tài khoản</option>
+          </select>
+        </div>
+        </div>
+          <table class="table table-dark">
+            <thead>
+                <th scope="row">STT</th>
+                <th scope="row">Tên</th>
+                <th scope="row">Email</th>
+                <th scope="row">Số điện thoại</th>
+                <th scope="row">Tên tài khoản</th>
+                <th scope="row">Quốc gia</th>
+                <th scope="row">Khóa tài khoản</th>
+            </thead>
+            <tbody>
+                <!--Người dùng 1-->
+              <tr>
+                <td>1</td>
+                <td>Duy Anh Nguyễn</td>
+                <td>clientABC@gmail.com</td>
+                <td>+497754895564</td>
+                <td>Client ABC</td>
+                <td>Đức</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 2-->
+              <tr>
+                <td>2</td>
+                <td>Thái Nguyễn Văn</td>
+                <td>vanthai_nguyen@gmail.com</td>
+                <td>+846734886625</td>
+                <td>Thái Nguyễn</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 3-->
+               <tr>
+                <td>3</td>
+                <td>Long Thành Phạm</td>
+                <td>long_dragon@yahoo.com</td>
+                <td>+897364221586</td>
+                <td>Long Phạm</td>
+                <td>Thái Lan</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 4-->
+               <tr>
+                <td>4</td>
+                <td>Quang Hải Nguyễn</td>
+                <td>quanghai97@gmail.com</td>
+                <td>+846463626897</td>
+                <td>Hải Bóng</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 5-->
+               <tr>
+                <td>5</td>
+                <td>Văn Chương Võ</td>
+                <td>vanchuong_vo@gmail.com</td>
+                <td>+841482212866</td>
+                <td>Chương Văn</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 6-->
+               <tr>
+                <td>6</td>
+                <td>Chi Thị Pu</td>
+                <td>chipu_singer@gmail.com</td>
+                <td>+842728363544</td>
+                <td>Chi Pu</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 7-->
+               <tr>
+                <td>7</td>
+                <td>Lung Thị Linh</td>
+                <td>lunglinh@outlook.com</td>
+                <td>+8964838299</td>
+                <td>Lung Linh</td>
+                <td>Áo</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 8-->
+               <tr>
+                <td>8</td>
+                <td>Văn Chuyên Vở</td>
+                <td>van_book@yahoo.com</td>
+                <td>+253777598231</td>
+                <td>Văn Vở</td>
+                <td>Nga</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 9-->
+               <tr>
+                <td>9</td>
+                <td>Văn A Nguyễn</td>
+                <td>van_a@gmail.com</td>
+                <td>+846782838480</td>
+                <td>Văn A</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 10-->
+               <tr>
+                <td>10</td>
+                <td>Tiến Linh Nguyễn</td>
+                <td>tienlinh@gmail.com</td>
+                <td>+8967384910293</td>
+                <td>Linh Tiến</td>
+                <td>Trung Quốc</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 11-->
+               <tr>
+                <td>11</td>
+                <td>Công Phượng</td>
+                <td>cungphung@gmail.com</td>
+                <td>+84778632519</td>
+                <td>Phượng Công</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 12-->
+               <tr>
+                <td>12</td>
+                <td>Thúy Thị Kiều</td>
+                <td>kieungungbich@gmail.com</td>
+                <td>+842863532188</td>
+                <td>Kiều Thị</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 13-->
+               <tr>
+                <td>13</td>
+                <td>Thúy Thị Vân</td>
+                <td>thuyvan_sister@gmail.com</td>
+                <td>+849909284712</td>
+                <td>Vân Thị</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+               <!--Người dùng 14-->
+               <tr>
+                <td>14</td>
+                <td>Văn Tý Lâm</td>
+                <td>tisuudanmao@gmail.com</td>
+                <td>+8476547289913</td>
+                <td>Lâm Tý</td>
+                <td>Việt Nam</td>
+                <td><button id="delete-btn">Khóa</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!--Bundle-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
