@@ -47,5 +47,5 @@ function Func1(){
     checkEmailValidate(txtEmail.value);
     checkPasswordValidate(txtPass.value);
     if (check1 == true & check2 == true)
-        loginA.href="../FB-admin-manage-users/FB-admin-manage-user.html";
+        loginA.href="../FB-admin-home/FB-admin-home.html";
 }

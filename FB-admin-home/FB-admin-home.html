@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!--CSS for page-->
+    <link rel="stylesheet" href="/FB-admin-manage-users/FB-admin-manage-user.css" />
+    <!--Google font-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!--Logo for title-->
+    <link rel="SHORTCUT ICON" href="../img/fbLogoPNG.png" />
+  </head>
+  <body>
+    <!--Header-->
+    <div class="container-fluid header" id="head">
+      <div class="row">
+        <div class="col-3 title">
+          <img src="../FB-admin-login/img/R.png" />
+          <h4>Admin Facebook</h4>
+        </div>
+        <div class="col-4 search-bar">
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >Tìm kiếm</span
+            >
+            <input type="text" class="form-control input-search" />
+          </div>
+        </div>
+        <div class="col-5 btns">
+          <button class="head-button" id="theme">
+            Giao diện màu: <span class="material-icons"> brightness_5 </span>
+          </button>
+          <button id="admin-profile" class="head-button"><a href="../FB-admin-info/FB-admin-info.html" style="text-decoration: none;color:black">
+            Thông tin Admin: <span class="material-icons"> account_box </span>
+          </a></button>
+          <button class="head-button">
+            Cài đặt: <span class="material-icons"> settings </span>
+          </button>
+          <button class="head-button">
+            <a href="../FB-admin-login/FB-admin-login.html">
+              Thoát: <span class="material-icons"> exit_to_app </span>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--main-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--left-->
+        <div class="col-3 left" id="left">
+          <h3 class="mt-3"><u>Danh mục quản lý______</u></h3>
+          <ul class="mt-2">
+            <li><a href="#" style="color: blue">Trang chủ</a></li>
+            <li><a href="/FB-admin-manage-users/FB-admin-manage-user.html">Quản lý người dùng</a></li>
+            <li><a href="#">Người dùng đăng ký Facebook</a></li>
+            <li><a href="#">Danh sách người lâu không sử dụng Facebook</a></li>
+            <li><a href="#">Sinh nhật người dùng hôm nay</a></li>
+            <li><a href="#">Hòm thư khiếu nại</a></li>
+            <li><a href="#">Báo cáo vi phạm tiêu chuẩn</a></li>
+            <li><a href="#">Quản trị server</a></li>
+            <li><a href="#">Báo cáo hoạt động gần đây</a></li>
+            <li><a href="#">Lên lịch cho các sự kiện</a></li>
+            <li><a href="#">Lượt truy cập</a></li>
+            <li><a href="#">Doanh thu từ chạy quảng cáo</a></li>
+          </ul>
+        </div>
+        <!--right-->
+        <div class="col-9 right">
+            <h1 id="info" class="text-center mt-5"><u>___Facebook - Trang chủ Admin___</u></h1>
+            <img src="../FB-admin-login/img/R (1).png" class=" mt-5 rounded mx-auto d-block">
+            <h5 id="note" class=" mt-5 text-center">Hãy là admin tốt và bảo mật thông tin cá nhân của những người tham gia Facebook!</h5>
+        </div>
+      </div>
+    </div>
+    <!--Bundle-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!--Script for change the theme-->
+    <script src="/FB-admin-home/FB-admin-home.js"></script>
+  </body>
+</html>

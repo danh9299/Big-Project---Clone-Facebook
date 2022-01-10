@@ -1,0 +1,36 @@
+#myUL::-webkit-scrollbar {
+    display: none;
+  }
+
+#myUL{
+    padding: 20px;
+    list-style-type: none;
+    overflow-y: scroll;"
+}
+
+
+#myInput{
+    width:70%;
+    margin:auto;
+    padding: 5px;
+}
+
+#btnAdd{
+    width:70%;
+    background-color: blueviolet;
+    margin:auto;
+}
+#btnAdd:hover{
+    background-color: pink;
+}
+
+
+.card{
+    border:solid;
+    border-radius: 4%;
+}
+#admin-profile{
+    background-color: yellow;
+}
+
+
