@@ -55,23 +55,16 @@ function showNotes(){
 
 
 function rmvNote(a){
-    let d = document.getElementById(a);
     let notes = localStorage.getItem("notes");
     if(notes == null){
         notesObj = []; //Luu gia tri sau chuyen doi
     }else{
         notesObj = JSON.parse(notes);
     }
+  
+    notesObj.splice(a,1);
 
-    for (var i=0;i<notesObj.length;i++){
-        if (i==a){
-            let tmp = notesObj[i];
-            notesObj[i] = notesObj[i+1];
-            notesObj[i+1] = tmp;
-        }
-    }
-    notesObj.pop();
-    notesObj.length = notesObj.length-1;
+  
     localStorage.setItem("notes",JSON.stringify(notesObj));
     showNotes();
 }
