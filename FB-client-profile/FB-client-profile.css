@@ -160,14 +160,16 @@ a:hover {
 }
 
 .change-ava {
+    position: absolute;
     width: 36px;
     height: 36px;
     background-color: aliceblue;
     margin-top: 100px;
-    margin-left: 120px;
+    margin-left: 135px;
+    border-radius: 50px;
     display: flex;
     align-items: center;
-    border-radius: 50px;
+    justify-content: center;
 }
 
 .add-cover {
