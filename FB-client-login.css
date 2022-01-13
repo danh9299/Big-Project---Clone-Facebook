@@ -1,29 +1,40 @@
 /*css for body*/
+
 body {
     background-color: white;
     width: 100%;
-  }
-  /*Css for the entire login box*/
-  .login-box {
+}
+
+
+/*Css for the entire login box*/
+
+.login-box {
     background-color: #edf0f5;
     padding: 10% 15% 20%;
     display: flex;
     align-items: center;
-  }
-  /*Css for the title FACEBOOK*/
-  .title h1 {
+}
+
+
+/*Css for the title FACEBOOK*/
+
+.title h1 {
     font-weight: 700;
     color: blue;
-  }
-  /*CSS for the caption below the FACEBOOK title*/
-  .title h5 {
+}
+
+
+/*CSS for the caption below the FACEBOOK title*/
+
+.title h5 {
     font-weight: bold;
     color: black;
-  }
-  
-  /*css for the input box*/
-  .input-box {
-    
+}
+
+
+/*css for the input box*/
+
+.input-box {
     background-color: white;
     border: none;
     border-radius: 5%;
@@ -32,120 +43,287 @@ body {
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-  }
-  /*css for the placeholder*/
-  .input-box input {
-    
+}
+
+
+/*css for the placeholder*/
+
+.input-box input {
     font-size: 20px;
     border: 1px solid rgb(221, 221, 221);
     border-radius: 3%/30%;
-  }
-  
-  ::placeholder {
-    font-size: 20px;;
-  }
-  
-  /*css for the LOG IN button*/
-  .input-box .btn-log-in {
+}
+
+ ::placeholder {
+    font-size: 20px;
+    ;
+}
+
+
+/*css for the LOG IN button*/
+
+.input-box .btn-log-in {
     width: 100%;
     border-radius: 3%;
     font-size: 30px;
     font-weight: bold;
-  }
-  /*css for the CREATE NEW ACCOUNT button*/
-  .create-new-acc-area {
+}
+
+
+/*css for the CREATE NEW ACCOUNT button*/
+
+.create-new-acc-area {
     display: flex;
-  
     justify-content: center;
-  }
-  
-  .input-box .btn-new-acc {
+}
+
+.input-box .btn-new-acc {
     background-color: #35de35;
-    
-   
     border-radius: 3%;
     font-size: 30px;
     font-weight: bold;
     border: none;
-  }
-  
-  /*css for "forgotten password"*/
-  .input-box a {
+}
+
+
+/*css for "forgotten password"*/
+
+.input-box a {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  /*css for Create a Page*/
-  
-  .create-a-page {
-   
+}
+
+
+/*css for Create a Page*/
+
+.create-a-page {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: large;
-  }
-  
-  .create-a-page a {
+}
+
+.create-a-page a {
     text-decoration: none;
     font-weight: bold;
     color: black;
-  }
-   /*create hover effect for create a page*/
-   .create-a-page a:hover{
-  text-decoration: underline;
 }
-  /*css for language*/
-  
-  .language {
+
+
+/*create hover effect for create a page*/
+
+.create-a-page a:hover {
+    text-decoration: underline;
+}
+
+
+/*css for language*/
+
+.language {
     list-style-type: none;
-  }
-  
-  .language li {
+}
+
+.language li {
     float: left;
     color: rgb(61, 61, 61);
     padding-right: 40px;
-    text-indent:-10px;
-  }
-  .language li a {
+    text-indent: -10px;
+}
+
+.language li a {
     text-decoration: none;
     color: rgb(61, 61, 61);
-  }
-  
-  .language button {
-    
-    
+}
+
+.language button {
     font-size: large;
     width: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-  }
+}
+
 
 /*create hover effect for language item*/
-.language li:hover{
-  text-decoration: underline;
+
+.language li:hover {
+    text-decoration: underline;
 }
-  
-  /*css for option*/
-  .option {
+
+
+/*css for option*/
+
+.option {
     list-style-type: none;
-  }
-  
-  .option li {
+}
+
+.option li {
     float: left;
     color: rgb(61, 61, 61);
     padding-right: 40px;
-    text-indent:-10px;
-  }
-  
-  .option li a {
+    text-indent: -10px;
+}
+
+.option li a {
     text-decoration: none;
     color: rgb(61, 61, 61);
-  }
- 
-  /*create hover effect for option item*/
-.option li:hover{
-  text-decoration: underline;
+}
+
+
+/*create hover effect for option item*/
+
+.option li:hover {
+    text-decoration: underline;
+}
+
+
+/* Register */
+
+body {
+    position: relative;
+}
+
+.register-container {
+    position: absolute;
+    position: fixed;
+    background-color: #fff;
+    width: 432px;
+    top: 50px;
+    left: 30%;
+    right: 70%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: none;
+    z-index: 10000;
+    border-radius: 10px;
+}
+
+.register-header {
+    position: relative;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.register-header .register-subcontent {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.register-header .register-content {
+    margin: 0;
+}
+
+.register-header button {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    outline: none;
+    border: none;
+    background-color: #fff;
+    padding: 0;
+}
+
+.register-body {
+    padding: 16px;
+}
+
+.register-body input {
+    background-color: #f5f6f7;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 16px;
+    padding: 11px;
+}
+
+.register-body>.name {
+    position: relative;
+}
+
+.register-body>.name>input {
+    width: 194px;
+}
+
+#full-name {
+    position: absolute;
+    right: 0;
+}
+
+.register-body>input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.register-body>span {
+    font-size: 12px;
+    color: #606770;
+    margin-bottom: 0;
+    margin-top: 2px;
+    text-align: left;
+}
+
+.register-body .date-of-birth select {
+    width: 125px;
+    height: 36px;
+    padding: 0 8px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.register-body .date-of-birth .month,
+.register-body .date-of-birth .year {
+    margin-left: 8px;
+}
+
+.register-body .sex {
+    display: flex;
+}
+
+.register-body .sex .sex1 {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 6px 0;
+}
+
+.register-body .sex .sex2,
+.register-body .sex .sex3 {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 6px 0;
+}
+
+.register-body .sex .sex1 label {
+    padding: 0 28px 0 10px;
+    width: 90px;
+}
+
+.register-body .sex .sex2 label {
+    padding: 0 28px 0 10px;
+    width: 100px;
+}
+
+.register-body .sex .sex3 label {
+    padding: 0 28px 0 10px;
+    width: 125px;
+}
+
+.register-body button {
+    display: flex;
+    width: 194px;
+    padding: 5px 0;
+    background-color: #00A400;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 2px;
 }
